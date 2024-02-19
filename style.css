@@ -5,11 +5,25 @@
     padding: 0;
 }
 
-:root{
-    --back:#08141e;
-    --text: #abc41c;
-    --number:#6431b5;
-    --title:#abc41c;
+:root {
+    --back: #1c2536;
+    --text: #2cc64e;
+    --number: #c137ff;
+    --title: #2cc64e;
+}
+
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: rgba(209, 209, 209, 0.863);
+}
+
+html ::-webkit-scrollbar-track {
+
+    background: rgb(80, 80, 80);
 }
 
 html,
@@ -26,9 +40,10 @@ body {
 
 }
 
-h1{
+h1 {
     text-align: center;
 }
+
 a {
     text-decoration: none;
 }
@@ -39,7 +54,7 @@ li {
 
 .arrow i {
     display: none;
-    color: #c361ea;
+    color: #e85685;
     font-weight: 900;
 }
 
@@ -65,6 +80,4 @@ li {
     position: absolute;
     top: 10%;
     color: var(--title);
-    filter: drop-shadow(8px 6px 4px var(--number));
 }
-

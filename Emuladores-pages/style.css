@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
 
 * {
     margin: 0;
@@ -8,11 +9,39 @@
 }
 
 :root {
-    --back: #08141e;
-    --text: #c5bdbd;
-    --number: #6431b5;
-    --title: #abc41c;
+    --back: #1c2536;
+    --text: #ced9ed;
+    --number: #c137ff;
+    --title: #2cc64e;
     --nav: #3e415f;
+}
+
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: rgba(209, 209, 209, 0.863);
+}
+
+html ::-webkit-scrollbar-track {
+
+    background: rgb(80, 80, 80);
+}
+
+@keyframes pulse {
+    0% {
+        filter: drop-shadow(0 0 10px);
+    }
+
+    50% {
+        filter: drop-shadow(0 0 0);
+    }
+
+    100% {
+        filter: drop-shadow(0 0 10px);
+    }
 }
 
 html {
@@ -44,12 +73,15 @@ body {
 }
 
 .nav a {
-    text-decoration: none;
-    color: var(--text);
-    font-size: 40px;
+    color: #70f828;
+    font-size: 25px;
     font-weight: 900;
     text-transform: uppercase;
     align-items: center;
+    text-decoration: none;
+    font-family: 'Press Start 2P';
+    animation: pulse 4s;
+    animation-iteration-count: infinite;
 }
 
 .input {
@@ -58,8 +90,6 @@ body {
     height: 100%;
     border: none;
     background-color: floralwhite;
-    font-weight: 900;
-    letter-spacing: 2px;
 
 }
 
@@ -76,13 +106,13 @@ body {
     padding: 0.34% 0.4% 0.34% 0.7%;
     border: 1px solid rgba(0, 0, 0, 0.349);
     font-size: large;
-    background-color: #6431b5cc;
+    background-color: #6b03ca;
 }
 
 .busca:hover {
     cursor: pointer;
 
-    background-color: #8046dd;
+    background-color: #c137ff;
 }
 
 .busca:active {
@@ -90,7 +120,7 @@ body {
 }
 
 .main {
-    margin: 6% 0;
+    margin: 5% 0;
 }
 
 .container {
@@ -98,7 +128,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2%;
-    row-gap: 3%;
+    row-gap: 2%;
 
 }
 
@@ -115,7 +145,7 @@ body {
 }
 
 .game:hover {
-    box-shadow: rgba(205, 161, 255, 0.534) 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: #e85685 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: 0.5s;
 }
 
