@@ -12,6 +12,7 @@
     --text: #c5bdbd;
     --number: #6431b5;
     --title: #abc41c;
+    --nav: #3e415f;
 }
 
 html {
@@ -29,8 +30,67 @@ body {
     min-height: 100vh;
 }
 
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 1% 2%;
+    align-items: center;
+    z-index: 3;
+    background-color: var(--nav);
+    border-radius: 0 0 0 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.input {
+    border-radius: 0 20px 20px 0;
+    padding: 0.5%;
+    height: 100%;
+    border: none;
+    background-color: floralwhite;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+}
+
+.input:focus {
+    border: none;
+    outline: 0;
+}
+
+.busca {
+    margin-left: auto;
+    color: var(--text);
+    background-color: transparent;
+    border-radius: 20px 0 0 20px;
+    padding: 0.34% 0.4% 0.34% 0.7%;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    font-size: large;
+    background-color: #6431b5cc;
+}
+
+.busca:hover {
+    cursor: pointer;
+
+    background-color: #8046dd;
+}
+
+.busca:active {
+    background-color: #682dc7;
+}
+
 .main {
-    margin: 5% 0;
+    margin: 6% 0;
 }
 
 .container {
@@ -38,7 +98,7 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2%;
-    row-gap: 4%;
+    row-gap: 3%;
 
 }
 
@@ -55,7 +115,7 @@ body {
 }
 
 .game:hover {
-    box-shadow: rgba(0, 0, 0, 0.534) 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(205, 161, 255, 0.534) 0px 2px 4px, rgb(0, 0, 0) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     transition: 0.5s;
 }
 
